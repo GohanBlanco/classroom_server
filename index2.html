@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>application classroom</title>
+ </head>
+
+ <h3>Services fournis par ClassroomCommunity</h3>
+
+<ul>
+	<li><a href="showQrcodes.php">showQrcode.php</a> : 
+Affiche le QR code et la liste des amis</li>
+	<li><a href="checkAttending.php?key=1235&id=YYYY">checkAttending.php?key=1235&id=YYYY</a> : 
+	permet de marquer sa presence</li>
+	<li><a href="getQuestions.php?key=1235">getQuestions.php?key=1235</a> : 
+	permet de recuperer la liste des questions</li>
+	<li><a href="getFriends.php?key=1235">getFriends.php?key=1235</a> : 
+	permet de recuperer la liste des amis</li>
+</ul>
+
+<h3> Codes de retour possibles : </h3>
+<ul>
+	<li> Code 404: '{"error" : "Server key not defined yet !!!"}' </li>
+	<li> Code 403: '{"error": "Key is required !!!"}' </li>
+	<li> Code 404: '{"error": "Your ID is required !!!"}' </li>
+	<li> Code 400: '{"error" : "You are not found !!!"}' </li>
+	<li> Code 403: '{"error" : "Wrong key !!!"}' </li>
+	<li> Code 200: '{"info" : "You are now checked.", "key" : "1235"}' </li>
+	<li> Code 500: '{"error" : "You cannot be checked !!!"}' </li>
+</ul>
